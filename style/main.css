@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
 *,
 *::after,
 *::before{
@@ -5,8 +8,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
 
 :root {
     --v-light-grey: hsl(0, 0%, 95%);
@@ -28,8 +31,11 @@ body{
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-direction: row;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
     
 }
 
@@ -37,14 +43,16 @@ article{
     color: var(--trans-white);
     width: calc(860px / 3);
     font-weight: 400;
+    
 }
 
 article h1{
-    font-family: 'Big Shoulders Display',sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 32px;
     color: var(--v-light-grey);
-    letter-spacing: -0.2rem;
+    text-transform: uppercase;
+    /* letter-spacing: -0.2rem; */
 }
 
 article img,p,h1{
@@ -54,7 +62,9 @@ article p{
     
     line-height: 1.5rem;
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 400;
+
 }
 
 article button{
@@ -62,9 +72,10 @@ article button{
     border-radius: 2rem;
     margin-left: 2rem;
     margin-top: 4rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     border: none;
-    
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
     background-color: var(--v-light-grey);
     
 }
@@ -74,6 +85,7 @@ article button:hover{
     color: var(--v-light-grey);
     border: 2px solid;
     cursor: pointer;
+    transition: all 500ms ease-in-out;
 }
 
 .article-left{
